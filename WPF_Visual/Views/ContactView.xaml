@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPF_Visual.Views.ContactView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Visual.Views"
+        mc:Ignorable="d"
+        Background="#E5E5E5" ResizeMode="CanMinimize"
+        Title="Contacts" Height="328" Width="790" WindowStyle="ToolWindow">
+
+    <StackPanel Margin="10">
+        <TextBlock Foreground="#1546A0" FontSize="15"
+                   Margin="0,0,0,10">
+            XRAI Team :<LineBreak />
+            - Sami HEDDID<LineBreak />
+            - Maria SADEK<LineBreak />
+            - Nihale BEN DRIOUCH<LineBreak />
+            - Zénon TALEUX<LineBreak />
+            - Maxence CHAMBRIN<LineBreak />
+            - Nassim GUETTAT<LineBreak />
+            - Louis DUMONTET<LineBreak />
+            - Anas EL QUARATIS
+        </TextBlock>
+        <TextBlock Foreground="#1546A0" FontSize="15">
+            Contact the team at :<LineBreak />
+        </TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"
+                       Foreground="#1546A0" FontSize="15">
+                zenon.taleux@efrei.net
+            </TextBlock>
+            <TextBlock Grid.Row="1"
+                       Foreground="#1546A0" FontSize="15">
+                louis.dumontet@efrei.net
+            </TextBlock>
+            <TextBlock Grid.Row="2"
+                       Foreground="#1546A0" FontSize="15">
+                sami.heddid@efrei.net and nihale.ben.driouch@efrei.net
+            </TextBlock>
+            <TextBlock Grid.Column="1" Grid.RowSpan="3"
+                       Foreground="#1546A0" FontSize="15">
+                 for application trouble and requests
+                <LineBreak />
+                 for Analysis troubles, questions and requests
+                <LineBreak />
+                 for project enquiries
+            </TextBlock>
+        </Grid>
+    </StackPanel>
+</Window>
