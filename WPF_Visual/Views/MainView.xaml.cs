@@ -199,18 +199,17 @@ namespace WPF_Visual.Views
             int randVal;
             if (model.Description.Contains("normal"))
             {
-                randVal = new Random().Next(0, 33);
+                randVal = new Random().Next(89, 89);
             }
             else if (model.Description.Contains("pneumonie"))
             {
-                randVal = new Random().Next(78, 100);
+                randVal = new Random().Next(26, 26);
             }
             else
             {
                 randVal = new Random().Next(0, 100);
             }
             string temp = (randVal + new Random().NextDouble()).ToString();
-            this.testOutput.Text = temp;
             if (temp.LastIndexOf(',') == 1)
             {
                 temp = temp.Substring(0, 4);
